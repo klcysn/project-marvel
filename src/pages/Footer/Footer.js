@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="column">
                         <section class="contact">
                             <header>
-                                <h2>A TEAM</h2>
+                                <h4>A TEAM</h4>
                             </header>
                             <p>You can find all Marvel Projects on this website !</p>
                             <ul className="icons">
