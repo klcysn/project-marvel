@@ -42,17 +42,29 @@
         }
     
         button {
-            width: 55px;
+            // width: 55px;
             height: 40px;
-            padding-top: 4px;
-            padding: 0px;
-            margin-right: 5px;
+            padding: 1rem;
+            // margin-right: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
        
     }
 
-    .heart{
-        color: pink;
+    .like-group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .fas{
+        color: #C82333;
+        cursor: pointer;
+        margin-left: 1rem;
+        
     }
 
 }

@@ -1,7 +1,6 @@
-import { Navbar, Nav, Form, FormControl, Image } from "react-bootstrap";
+import { Navbar, Nav, Form, Image } from "react-bootstrap";
 import "./Navbar.scss";
 import React from "react";
-import { Animated } from "react-animated-css";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { logout } from "../../authentication/Authentication";
