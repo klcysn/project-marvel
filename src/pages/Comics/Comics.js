@@ -13,13 +13,11 @@ const Comics = () => {
   useEffect(() => {
     fetchData('comics', '', '', '30').then(data => setData(data))
   }, [])
-  console.log(data)
 
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
-      // slidesToSlide: 1, // optional, default to 1.
       paritialVisibilityGutter: 60
     },
     tablet: {

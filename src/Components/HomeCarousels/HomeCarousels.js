@@ -1,14 +1,8 @@
-import react, { useState } from "react"
 import { Carousel } from 'react-bootstrap';
 import ReactPlayer from 'react-player'
 import './HomeCarousel.scss';
 
 function ControlledCarousel() {
-  // const [index, setIndex] = useState(0);
-
-  // const handleSelect = (selectedIndex, e) => {
-  //   setIndex(selectedIndex);
-  // };
 
   return (
     <div className="DivCarousel">

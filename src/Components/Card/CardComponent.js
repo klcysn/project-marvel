@@ -69,7 +69,6 @@ export default function CardComponent() {
               value={inputCharacter}
               onChange={(event) => {
                 setInputCharacter(event.target.value)
-                // console.log(inputCharacter)
               }}
             />
 

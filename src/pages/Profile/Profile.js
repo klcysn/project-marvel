@@ -23,8 +23,6 @@ const Profile = () => {
     setFavs(JSON.parse(localStorage.getItem('favs')) || [])
     setComicsFavs(JSON.parse(localStorage.getItem('favsComics')) || [])
   }, [])
-  console.log(favs)
-
 
   return (
     <div className="profile-page">

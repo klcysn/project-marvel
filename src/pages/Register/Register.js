@@ -44,7 +44,6 @@ const Register = () => {
             handleBlur,
             handleSubmit,
             isSubmitting,
-            /* and other goodies */
           }) =>
             show && (
               <form onSubmit={handleSubmit} className="register-form">

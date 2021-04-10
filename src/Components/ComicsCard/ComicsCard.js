@@ -38,7 +38,6 @@ const Card = ({ item }) => {
       </figure>
       <Button className="button"onClick={() => handleFavourite(item)} variant='secondary'>Add Fav</Button>
       <h3>{item.title}</h3>
-      {/* {item.creators.items.map((data) => <h5>{data.name}</h5>)} */}
       {  item.creators.items[0] && <h5>{item.creators.items[0].name}</h5>}
       <AlertModal show={modalShow} onHide={() => setModalShow(false)} />
       <FavModel show={show} onHide={() => setShow(false)} />

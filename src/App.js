@@ -35,7 +35,6 @@ function App() {
     }
   });
 
-  // <button onClick={()=>fetchData("characters", "1011334", "series").then(data=>setData(data))}>Fetch Data</button>
   return (
     <div className="App">
       <Router>
