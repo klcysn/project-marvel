@@ -20,7 +20,7 @@ export default function NavbarComponents() {
   return (
     <div className="NavbarComponent">
       <Navbar className="Navbar" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">A TEAM</Navbar.Brand>
+        <Navbar.Brand href="#home">Marvel</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link className="NavText" name="" onClick={handleRoute}>
             Home
