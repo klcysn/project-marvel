@@ -167,7 +167,7 @@ export default function CardComponent() {
               )
               .map((item, i) => {
                 return (
-                  <div className="mapFav">
+                  <div className="mapFav" key={i}>
                     <Card className='cards' style={{ width: '11rem', height: 'auto' }}>
                       <Card.Img variant='top' src={`${item.thumbnail.path}.${item.thumbnail.extension}`} />
                       <Card.Body>

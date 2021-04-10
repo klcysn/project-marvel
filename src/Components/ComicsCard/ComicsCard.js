@@ -34,7 +34,7 @@ const Card = ({ item }) => {
         <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="" />
         <figcaption>
           <h3>see details...</h3>
-        </figcaption><a href={item.urls[0].url} />
+        </figcaption><a href={item.urls[0].url}/>
       </figure>
       <Button className="button"onClick={() => handleFavourite(item)} variant='secondary'>Add Fav</Button>
       <h3>{item.title}</h3>
