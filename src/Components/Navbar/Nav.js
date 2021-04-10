@@ -8,7 +8,7 @@ import { logout } from "../../authentication/Authentication";
 export default function NavbarComponents() {
   const url = useLocation();
   const history = useHistory();
-  const user = useSelector((state) => state.userId);
+  const [user] = useSelector((state) => state.userId);
   const handleRoute = (event) => {
     history.push(`/${event.target.name}`);
   };
@@ -60,8 +60,7 @@ export default function NavbarComponents() {
             <>
               <Nav.Link className="NavText user-name">
                 <Link to={{ pathname: "/profile" }}>
-                  {user.displayName[0].toUpperCase()}
-                  {user.displayName.slice(1)}
+                  {user.displayName}
                 </Link>
               </Nav.Link>
               <Image
