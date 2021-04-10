@@ -1,0 +1,12 @@
+.CharacterPages {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("./CharacterPages.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}   

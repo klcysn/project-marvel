@@ -2,11 +2,13 @@ import firebase from "firebase"
 import "firebase/auth";
 
 
-export const register = (email, password) =>{
+export const register = (email, password, displayName) =>{
   firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((userCredential) => {
     // Signed in 
-    // ...
+    userCredential.user.updateProfile({ // <-- Update Method here
+      displayName,
+    })
   })
   .catch((error) => {
     var errorMessage = error.message;

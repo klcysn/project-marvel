@@ -4,7 +4,6 @@
     padding-right: 2em;
     .container {
       width: 100%;
-
       .foobar {
         margin-top: -36px;
         margin-left: -36px;
@@ -13,7 +12,7 @@
         box-sizing: border-box;
         align-items: stretch;
         * {
-          // padding: 36px 0 0 36px;
+          padding: 36px 0 0 36px;
           box-sizing: border-box;
         }
       }
@@ -32,7 +31,7 @@
       box-sizing: border-box;
       align-items: stretch;
       * {
-        // padding: 40px 0 0 40px;
+        padding: 40px 0 0 40px;
         box-sizing: border-box;
       }
     }
@@ -40,28 +39,24 @@
 }
 
 #footer {
-  // position: relative;
+  position: relative;
   overflow: hidden;
+  padding: 0 0 6em 0;
   background: #2b252c;
   color: #fff;
-  // position: fixed;
-  // left: 0;
-  // bottom: 0;
-  // width: 100%;
 
   .container {
     margin: 0 auto;
     max-width: 100%;
     width: 1400px;
-    height: 22.5vh;
 
     hr {
       position: relative;
       display: block;
       border: 0;
-      top: 0.0em;
-      margin-bottom: 2.5em;
-      height: 5px;
+      top: 4.5em;
+      margin-bottom: 9em;
+      height: 6px;
       border-top: solid 1px rgba(128, 128, 128, 0.2);
       border-bottom: solid 1px rgba(128, 128, 128, 0.2);
       hr:before {
@@ -90,18 +85,17 @@
 
   .contact {
     text-align: center;
-    margin-bottom: 0.5em;
+    margin-bottom: 3em;
     p {
       text-align: center;
-      margin: 0 0 1em 0;
-      font-size: 15px;
+      margin: 0 0 3em 0;
     }
   }
 
   header {
     text-align: center;
     cursor: default;
-    margin: 0.3rem 0 0.3rem 0;
+    margin: 0 0 1em 0;
   }
 }
 
@@ -110,8 +104,8 @@ ul.icons {
   background: rgba(128, 128, 128, 0.05);
   border-radius: 4em;
   display: inline-block;
-  padding: 0 0.30em 0 0.30em;
-  font-size: 1em;
+  padding: 0.35em 0.75em 0.35em 0.75em;
+  font-size: 1.75em;
   cursor: default;
   list-style: none;
   li {
@@ -137,9 +131,8 @@ ul.icons {
 .copyright {
   text-align: center;
   color: rgba(128, 128, 128, 0.75);
-  font-size: 0.7em;
+  font-size: 0.8em;
   cursor: default;
-  margin-top: -10px;
 
   a {
     color: rgba(128, 128, 128, 0.75);

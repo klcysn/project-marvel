@@ -1,0 +1,58 @@
+.CardContainer {
+    
+    .searchForm {
+        margin-bottom: 80px;
+        margin-top: 30px;
+        
+        .search {
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+    }
+
+    .AllCards {
+        
+        text-align: center;    
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        align-items: center;
+        margin: 20px;
+        
+        .cards {
+            align-items: center;
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            border: 3px solid white;
+            border-radius: 1rem;
+            
+            .cardTitle {
+                font-size: 20px;
+            }
+
+            Img {
+                border: 2px solid white;
+                border-radius: 15px;
+                margin-top: 1rem;
+                width: 60%;
+                height: 190px;
+              }
+        }
+    
+        button {
+            width: 55px;
+            height: 40px;
+            padding-top: 4px;
+            padding: 0px;
+            margin-right: 5px;
+        }
+       
+    }
+
+    .heart{
+        color: pink;
+    }
+
+}

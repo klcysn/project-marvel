@@ -1,0 +1,36 @@
+.carousel-wrapper {
+    background-image: url("./backComics.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .react-multi-carousel-track {
+        padding: 50px;
+    }
+    .comics {
+        font-size: 40px;
+        margin-bottom: 50px;
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .carousel {
+        padding: 40px;
+        padding-bottom: 0;
+        background-color: rgba(0,0,0,0.2);
+        width: 90%;
+        height: auto;
+        img {
+            width: 100%;
+            height: 350px;
+            max-height: min-content;
+            border: 3px solid white;
+            border-radius: 10px;
+        }
+    }
+}

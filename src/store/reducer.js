@@ -3,6 +3,7 @@ export const reducer = (state, action) =>{
         case "SignIn":
             state.userId = action.payload.userId
             return {...state}
+
         default:
             return state
     }

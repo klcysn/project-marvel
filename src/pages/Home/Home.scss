@@ -1,0 +1,18 @@
+html {
+    font-size: 20px;
+    scroll-behavior: smooth;
+    .homePage {
+
+        background-image: url("./Home.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 92.5vh;
+        width: 100%;
+    }
+    .CharacterPages {
+        
+    }
+}
