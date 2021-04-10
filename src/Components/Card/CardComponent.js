@@ -7,6 +7,7 @@ import handleSetData from '../../helpers/handleSetData'
 import fetchData from '../../helpers/fetchData'
 import { useSelector } from 'react-redux'
 import AlertModal from "../AlertModal/AlertModal"
+import FavModel from "../FavModel/FavModel"
 
 
 
@@ -19,6 +20,7 @@ export default function CardComponent() {
   const [favs, setFavs] = useState([])
   const user = useSelector(state => state.userId)
   const [modalShow, setModalShow] = useState(false);
+  const [show, setShow] = useState(false)
 
 
   useEffect(() => {
@@ -47,6 +49,8 @@ export default function CardComponent() {
   const handleFavourite = (item) => {
     if (user){
     localStorage.setItem('favs', JSON.stringify([...favs, item]))
+    setShow(true)
+    setTimeout(()=>setShow(false), 1000)
     setForce2(force2 + 1)
   } else {
     setModalShow(true)
@@ -184,6 +188,7 @@ export default function CardComponent() {
         )}
       </div>
       <AlertModal show={modalShow} onHide={() => setModalShow(false)} />
+      <FavModel show={show} onHide={() => setShow(false)} />
     </div>
 
   )
