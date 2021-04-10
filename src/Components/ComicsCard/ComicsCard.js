@@ -30,12 +30,14 @@ const Card = ({ item }) => {
 
   return (
     <div className='snip-wrapper'>
+       <a href={item.urls[0].url}>
       <figure className='snip1584'>
         <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="" />
         <figcaption>
           <h3>see details...</h3>
-        </figcaption><a href={item.urls[0].url}/>
+        </figcaption>
       </figure>
+      </a>
       <Button className="button"onClick={() => handleFavourite(item)} variant='secondary'>Add Fav</Button>
       <h3>{item.title}</h3>
       {  item.creators.items[0] && <h5>{item.creators.items[0].name}</h5>}
