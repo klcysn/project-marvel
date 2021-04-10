@@ -2,6 +2,7 @@ import React, {useState, useEffect } from 'react'
 import { Button } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import AlertModal from "../AlertModal/AlertModal"
+import FavModel from "../FavModel/FavModel"
 
 import './ComicsCard.scss'
 
@@ -10,6 +11,7 @@ const Card = ({ item }) => {
   const [favs, setFavs] = useState([])
   const user = useSelector(state => state.userId)
   const [modalShow, setModalShow] = useState(false);
+  const [show, setShow] = useState(false)
 
   useEffect(() => {
     setFavs(JSON.parse(localStorage.getItem('favsComics')) || [])
@@ -18,8 +20,9 @@ const Card = ({ item }) => {
   const handleFavourite = (item) => {
     if (user) {
       localStorage.setItem('favsComics', JSON.stringify([item, ...favs]))
+      setShow(true)
+      setTimeout(()=>setShow(false), 1000)
       setForce2(force2 + 1)
-      console.log(item)
     } else {
       setModalShow(true)
     }
@@ -38,6 +41,7 @@ const Card = ({ item }) => {
       {/* {item.creators.items.map((data) => <h5>{data.name}</h5>)} */}
       {  item.creators.items[0] && <h5>{item.creators.items[0].name}</h5>}
       <AlertModal show={modalShow} onHide={() => setModalShow(false)} />
+      <FavModel show={show} onHide={() => setShow(false)} />
     </div>
   )
 }
