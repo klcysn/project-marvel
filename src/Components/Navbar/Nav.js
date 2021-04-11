@@ -39,6 +39,9 @@ export default function NavbarComponents() {
               >
                 Movies
               </Nav.Link>
+              <Nav.Link className="NavText" href={user ? "/Chat" : "/login"}>
+                Chat
+              </Nav.Link>
             </>
           )}
         </Nav>

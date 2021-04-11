@@ -1,4 +1,8 @@
 .NavbarComponent {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     .Navbar {
         height: 7.5vh;
         background-color: rgb(0, 0, 0); /* Fallback color */

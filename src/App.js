@@ -4,6 +4,7 @@ import Login from "./pages/Login/Login"
 import Home from "./pages/Home/Home"
 import NavbarComponents from "./Components/Navbar/Nav"
 import Footer from './pages/Footer/Footer'
+import ChatPage from "./pages/ChatPage/ChatPage"
 import {
   BrowserRouter as Router,
   Switch,
@@ -43,6 +44,7 @@ function App() {
           <Route path="/register" component={Register}/>
           <Route path="/login" component={Login}/>
           <Route path="/profile" component={Profile}/>
+          <Route path="/chat" component={ChatPage}/>
           <Route exact path="/" component={Home}/>
         </Switch>
        </Router>
