@@ -18,8 +18,10 @@ export default function NavbarComponents() {
   };
   return (
     <div className="NavbarComponent">
-      <Navbar className="Navbar" bg="dark" variant="dark">
+      <Navbar className="Navbar" expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#home">Marvel</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link className="NavText" name="" onClick={handleRoute}>
             Home
@@ -77,6 +79,7 @@ export default function NavbarComponents() {
             </>
           )}
         </Form>
+        </Navbar.Collapse>
       </Navbar>
     </div>
   );

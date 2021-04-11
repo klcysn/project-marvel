@@ -10,7 +10,7 @@ const MessageCard = ({item, variant, i, user}) => {
                     bg={variant[colorNummer]}
                     key={i}
                     text={'white'}
-                    style={{ width: '40vw', height: "25vh", right: user.email === item.user ? "-50%" : null }}
+                    style={{ width: '40vw', minWidth: "10rem", right: user.email === item.user ? "-50%" : null }}
                     className="mb-2 ml-2"
                 >
                     <Card.Header>{item.user}</Card.Header>
