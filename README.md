@@ -1,4 +1,7 @@
 ### Visit demo page: https://project-marvel.vercel.app/
+### You can login with: email: test@test.com, password: 123456
+
+![Marvel](https://user-images.githubusercontent.com/67810399/114663854-3aabe400-9cfb-11eb-80d7-eea05d76b2f5.png)
 # To use project;
 ### 1. Download Project
 ### 2. Yarn install or npm install
