@@ -17,7 +17,10 @@ const ChatPage = () => {
     
 
     useEffect(()=>{
-        axios.get(process.env.REACT_APP_REAL_TIME_DATA_BASE_CHAT).then(({data})=>setAllMessages(data))
+        axios.get(process.env.REACT_APP_REAL_TIME_DATA_BASE_CHAT).then(({data})=>{
+            setAllMessages(data)
+            console.log(data)
+        })
     },[force])
 
     const handleSubmit = async (message) =>{
@@ -28,7 +31,7 @@ const ChatPage = () => {
             return null
         }
     }
-    console.log(allMessages)
+    
     return (
       <div id="chat-container" className="chat-container">
         <div className="chat-screen">
