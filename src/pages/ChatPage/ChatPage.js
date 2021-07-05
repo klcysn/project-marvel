@@ -19,8 +19,10 @@ const ChatPage = () => {
     useEffect(()=>{
         axios.get(process.env.REACT_APP_REAL_TIME_DATA_BASE_CHAT).then(({data})=>{
             setAllMessages(data)
-            console.log(data)
-        })
+            console.log(data, "data")
+        }).catch(error => {
+     console.log(error.response.data.error)
+  })
     },[force])
 
     const handleSubmit = async (message) =>{
