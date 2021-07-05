@@ -28,6 +28,7 @@ const ChatPage = () => {
             return null
         }
     }
+    console.log(allMessages)
     return (
       <div id="chat-container" className="chat-container">
         <div className="chat-screen">
